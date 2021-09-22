@@ -1,25 +1,25 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import 'firebase/auth';
+import 'firebase/database';
 
 const prodConfig = {
-  apiKey: "AIzaSyDMja1nY2576mdZka0br2eXmPBm1TXCHCo",
-  authDomain: "checkr-staff-manager.firebaseapp.com",
-  databaseURL:
-    "https://checkr-staff-manager-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "checkr-staff-manager",
-  storageBucket: "checkr-staff-manager.appspot.com",
-  messagingSenderId: "982906521380",
-  appId: "1:982906521380:web:f78d6ac23a0a33fbec55b1",
+  apiKey: "AIzaSyBK88hrDK6jTy4154tjlFm_7QES-kvnm2g",
+  authDomain: "greencab-80974.firebaseapp.com",
+  projectId: "greencab-80974",
+  storageBucket: "greencab-80974.appspot.com",
+  messagingSenderId: "534334512091",
+  appId: "1:534334512091:web:49540b1d8b13dc879ea5fe",
+  measurementId: "G-G0MERQGRLP"
 };
 
 const devConfig = {
-  apiKey: "AIzaSyDMja1nY2576mdZka0br2eXmPBm1TXCHCo",
-  authDomain: "checkr-staff-manager.firebaseapp.com",
-  databaseURL:
-    "https://checkr-staff-manager-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "checkr-staff-manager",
-  storageBucket: "checkr-staff-manager.appspot.com",
-  messagingSenderId: "982906521380",
-  appId: "1:982906521380:web:f78d6ac23a0a33fbec55b1",
+  apiKey: "AIzaSyBK88hrDK6jTy4154tjlFm_7QES-kvnm2g",
+  authDomain: "greencab-80974.firebaseapp.com",
+  projectId: "greencab-80974",
+  storageBucket: "greencab-80974.appspot.com",
+  messagingSenderId: "534334512091",
+  appId: "1:534334512091:web:49540b1d8b13dc879ea5fe",
+  measurementId: "G-G0MERQGRLP"
 };
 
 const config = process.env.NODE_ENV === "production" ? prodConfig : devConfig;
